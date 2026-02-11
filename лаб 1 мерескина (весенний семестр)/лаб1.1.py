@@ -48,9 +48,9 @@ class Notebook:
         >>> notebook.write_in_notebook(36,5)
         """
         if not isinstance(pages, (int, float)):
-            raise TypeError("Добавляемая жидкость должна быть типа int или float")
+            raise TypeError("Количество будущих исписанных страниц должно быть типа int или float")
         if pages < 0:
-            raise ValueError("Добавляемая жидкость должна положительным числом")
+            raise ValueError("Количество будущих исписанных страниц должно быть положительным числом")
         ...
 
     def tear_out_pages_from_notebook(self, torn_pages: float) -> None:
